@@ -1,6 +1,63 @@
-.h1 {
+h1 {
   text-align: center;
   font-family: "Tagesschrift", system-ui;
+  font-weight: 600;
+  font-style: bold;
+  color: #9a031e;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.box {
+  position: relative;
+  display: inline-block;
+  border: 3px solid #ca2e55;
+  background-color: #e4e3d3;
+  color: #050505;
+  font-family: "Tagesschrift", system-ui;
+  font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+}
+
+span {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  /*border: 3px solid #ca2e55;*/
+  background-color: #ca2e55;
+  color: #ffffff;
+  font-family: "Tagesschrift", system-ui;
+  font-weight: 400;
+  font-style: bold;
+  text-align: center;
+  padding: 2px 15px;
+  height: 25px;
+  width: 80px;
+}
+
+p {
+  padding: 15px 20px;
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .box:nth-child(3) {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
 }
