@@ -29,9 +29,9 @@ span {
   position: absolute;
   top: 0;
   right: 0;
-  /*border: 3px solid #ca2e55;*/
-  background-color: #ca2e55;
-  color: #ffffff;
+  border-bottom: 3px solid #ca2e55;
+  border-left: 3px solid #ca2e55;
+  color: #050505;
   font-family: "Tagesschrift", system-ui;
   font-weight: 400;
   font-style: bold;
@@ -41,8 +41,21 @@ span {
   width: 80px;
 }
 
+#chicken {
+  background-color: #a1ef8b;
+}
+
+#beef {
+  background-color: #92d5e6;
+}
+
+#sushi {
+  background-color: #f2c078;
+}
+
 p {
   padding: 15px 20px;
+  margin-top: 40px;
 }
 
 @media (max-width: 991px) and (min-width: 768px) {
